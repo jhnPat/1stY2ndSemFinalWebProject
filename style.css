@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #979797
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #333333
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+.logo p {
+    position: absolute;
+    top: 35px;
+    left: 300px;
+    font-size: 30px;
+    font-weight: 50px;
+}
+
+.logo img{
+   width: 200px;
+   height: 150px;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 550;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #000000;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: .5s;
+}
+
+.navigation a:hover:after {
+    transform: scaleX(1);
+}
+
+.btnLogin-popup img{
+    position: absolute;
+    top: -20px;
+    right: -50px;
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    border: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    margin-left: 40px;
+}
+
+.btnLogin-popup img:hover{
+    width: 63px;
+    height: 63px;
+    box-shadow: 0 0 5px #2e2d2d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+}
+
+#Home {
+    background-image: url(img1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+#Category {
+    width: 100%;
+    max-height: 1000px;
+    display: flex;
+    justify-content: center;
+    padding: 90px 0;
+    column-gap: 20px;
+    row-gap: 30px;
+    flex-wrap: wrap;
+}
+
+#Category p {
+    color: #111;
+    text-align: center;
+    padding-bottom: 30px;
+    flex-basis: 100%;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+#Category .category-box {
+    text-decoration: none;
+    background-color: #353535;
+    width: 390px;
+    height: 230px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Category .category-box:nth-child(2) {
+    background-image: url(marketplace.jpg);
+}
+
+#Category .category-box:nth-child(3) {
+    background-image: url(Merch.png);
+}
+
+#Category .category-box:nth-child(4) {
+    background-image: url(Customization.jpg);
+}
+
+#Category .category-box h3 {
+    color: #fff;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+    text-shadow: 2px 4px 21px #000000;
+}
+
+.repairshop-container {
+    position: relative;
+    width: 1210px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.repairshop-container a {
+    width: 170px;
+    height: 50px;
+    position: absolute;
+    border-radius: 50px;
+    font-size: 2em;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 550;
+    top: 500px;
+    left: 70px;
+    z-index: 2;
+    
+}
+
+#Category img {
+    position: absolute;
+    width: 1200px;
+    height: 590px;
+    top: 5px;
+    left: 5px;
+}
+
+.repairshop-container a::after {
+    content: '';
+    position: absolute;
+    right: -2px;
+    bottom: -2px;
+    width: 200px;
+    height: 50px;
+    background: #353535;
+    border-radius: 50px;
+    transform: scaleX(0);
+    transition: .5s;
+    z-index: -1;
+}
+
+.repairshop-container a:hover:after {
+    transform: scaleX(1);
+}
+
+#Category .category-box:hover {
+    width: 395px;
+    height: 235px;
+    box-shadow: 0 0 10px #2e2d2d;
+}
+
+#Category .category-box:hover {
+    width: 395px;
+    height: 235px;
+    box-shadow: 0 0 10px #2e2d2d;
+}
+
+#About {
+    position: relative;
+    width: 1210px;
+    padding: 30px 0; 
+}
+
+#About img {
+    position: absolute;
+    left: 350px;
+    height: 570px;
+    width: 450px;
+}
+
+#About .text {
+    position: absolute;
+    left: 900px;
+    height: 500px;
+    width: 500px;
+    font-size: 35px;
+}
+
+#About .text p {
+    padding-top: 50px;
+    font-size: 15px;
+    color: gray;
+}
+
+#About .text h3{
+    padding-top: 50px;
+    height: 500px;
+    width: 500px;
+    font-size: 15px;
+}
+
+#Contact {
+    background: #fff;
+}
+
+#Feedback {
+    background: #f2f2f2;
+}
